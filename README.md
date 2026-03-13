@@ -1,4 +1,4 @@
-# Integración del Formulario de Contacto en WordPress
+# Instalación Wordpress. Creación plantilla personalizada. Integración en WP del Formulario de Contacto de la sesión 1.
 ### Prácticas Codenode · Sesión 2
 
 ---
