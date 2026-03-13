@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --bg:        #0f0f0f;
+  --surface:   #1a1a1a;
+  --border:    #2e2e2e;
+  --accent:    #c8a96e;
+  --accent-hov:#e0c48a;
+  --text:      #e8e8e8;
+  --muted:     #888;
+  --error:     #e06c6c;
+  --radius:    10px;
+  --transition: 0.25s ease;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  color: var(--text);
+}
+
+.contact-section form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2.5rem 2.5rem 2rem;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+  animation: fadeUp 0.5s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.contact-section fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.4rem 0.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.contact-section legend {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 0 0.5rem;
+}
+
+.contact-section .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+
+.contact-section label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.contact-section label span {
+  color: var(--accent);
+  margin-left: 2px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 1rem 1.2rem;
+  width: 100%;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  outline: none;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(200, 169, 110, 0.12);
+}
+
+.contact-section textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-section .field-error {
+  color: var(--error);
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  display: none;
+}
+
+.contact-section input.invalid,
+.contact-section textarea.invalid {
+  border-color: var(--error) !important;
+  box-shadow: 0 0 0 3px rgba(224, 108, 108, 0.15) !important;
+}
+
+.contact-section .required-note {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 1.4rem;
+}
+
+.contact-section button[type="submit"] {
+  width: 100%;
+  background: var(--accent);
+  color: #0f0f0f;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 1.1rem;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.contact-section button[type="submit"]:hover {
+  background: var(--accent-hov);
+  box-shadow: 0 4px 20px rgba(200, 169, 110, 0.3);
+  transform: translateY(-1px);
+}
+
+.contact-section button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+.form-result {
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.form-result.exito h3 { color: var(--accent); font-size: 1.4rem; }
+.form-result.error h3 { color: var(--error); font-size: 1.4rem; }
+
+.form-result ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.form-result ul li {
+  color: var(--error);
+  font-size: 1.1rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-result ul li::before {
+  content: "✕  ";
+}
+
+@media (max-width: 480px) {
+  .contact-section form {
+    padding: 1.8rem 1.2rem 1.4rem;
+  }
+}
+
+/* Forzar ancho en WordPress */
+.page-template-page-contact #site-content,
+.page-template-page-contact .section-inner,
+.page-template-page-contact .entry-content {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
