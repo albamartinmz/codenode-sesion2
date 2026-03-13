@@ -99,7 +99,7 @@ En el asistente de instalación introducir los siguientes datos:
 
 ## 🎨 Parte 2: Integración del Formulario de Contacto
 
-### Estructura de archivos del tema hijo
+### Estructura de archivos del tema hijo **Codenode**
 
 ```
 wp-content/themes/codenode/
@@ -112,7 +112,7 @@ wp-content/themes/codenode/
 
 ### Proceso de integración
 
-#### 1. Creación del tema hijo
+#### 1. Creación del tema hijo **Codenode**
 
 Para poder crear plantillas personalizadas sin modificar el tema original, se ha creado un tema hijo de **Twenty Twenty** llamado **Codenode**. Esto garantiza que los cambios se mantengan aunque el tema padre se actualice.
 
@@ -121,7 +121,7 @@ El tema hijo requiere dos archivos mínimos:
 **`style.css`** → Cabecera que declara el tema y referencia al padre
 
 
-#### 2. Creación de la plantilla Contact
+#### 2. Creación de la plantilla Contacto
 
 Con el tema hijo activo, se crea el archivo `page-contact.php` que define la plantilla personalizada. Esta plantilla integra:
 
