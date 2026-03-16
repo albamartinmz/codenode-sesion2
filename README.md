@@ -71,15 +71,7 @@ C:\xampp\mysql\bin\mysqld.exe --console
 
 ### 3. Configurar WordPress
 
-En el asistente de instalación introducir los siguientes datos:
-
-| Campo | Valor |
-|-------|-------|
-| Nombre de la base de datos | `wordpress_db` |
-| Nombre de usuario | `root` |
-| Contraseña | *(vacía)* |
-| Servidor de la base de datos | `localhost` |
-| Prefijo de tabla | `wp_` |
+En el asistente de instalación introducir los datos que te pide, como usuario y contraseña etc.
 
 ### 4. Datos del sitio
 
