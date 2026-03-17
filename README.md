@@ -7,6 +7,10 @@
 
 Este proyecto documenta la instalación de WordPress en un entorno local con XAMPP y la integración del formulario de contacto creado en la sesión 1 de estas prácticas. Para ello, a partir de un tema hijo basado en Twenty Twenty, se ha creado una plantilla reutilizable llamada **Codenode** que permita extender funcionalidades en futuras sesiones sin modificar el tema original.
 
+Documentación completa del proceso de instalación y configuración de WordPress:
+
+👉 [Descargar / Ver PDF](sesion2_wordpresss_alba_martin.pdf)
+
 ---
 
 ## 🛠️ Entorno y Tecnologías Utilizadas
@@ -121,14 +125,6 @@ Con el tema hijo activo, se crea el archivo `page-contact.php` que define la pla
 - La validación PHP en el servidor
 - La carga condicional del CSS y JS solo en la página de contacto
 
-**Cabecera de la plantilla:**
-```php
-<?php
-/*
-Template Name: Contact
-*/
-?>
-```
 
 #### 3. Adaptación del CSS y JS
 
@@ -167,10 +163,7 @@ Tareas adicionales para completar el proyecto:
 
 - [ ] Crear 2 entradas de blog con título, párrafos e imagen
 - [ ] Configurar el menú de navegación con las páginas del sitio
-- [ ] Añadir widgets personalizados en la barra lateral
-- [ ] Personalizar el footer del tema 
 - [ ] Crear un favicon para personalizar la web
-
 
 ---
 
